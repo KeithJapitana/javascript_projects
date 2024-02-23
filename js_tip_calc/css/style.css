@@ -1,0 +1,21 @@
+body {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: gold;
+}
+.box::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.box:hover {
+  transform: perspective(200px) translateZ(-50px);
+}
